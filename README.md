@@ -1,5 +1,5 @@
-# alfred-server
-auteur: Gauthier Donikian
+# Alfred-server
+Auteur: Gauthier Donikian
 
 Multiplateforme web de contrôle de l'environnement domotique alfred.
 
