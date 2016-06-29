@@ -1,0 +1,95 @@
+
+/*.container-fluid {
+    
+}
+.modal-body {
+    
+       background-image: url('../img/fond.jpg'); 
+       background-repeat:no-repeat;
+       background-size:cover;
+       height: 1000px;
+}
+
+#house{
+    
+}
+*/#connexion{*//*
+        margin-left: -340px;
+        margin-top: 30px;*/
+        width:900px;
+        height: 200px;
+        background-image: url('../img/btn1.png');
+        /*color: black;
+        font-size: 60px;
+        opacity: 0.9;
+        border-color: black;*/
+
+}
+#ouvert{
+        /*margin-left: -340px;
+        margin-top: 20px;*/
+        width:900px;
+        height: 200px;
+        background-image: url('../img/btn2.png');
+        /*color: black;
+        font-size: 60px;
+        opacity: 0.9;
+        border-color: black;*/
+
+
+
+}
+#fermer{
+        /*margin-left: -340px;
+        margin-top: 20px;*/
+        width:900px;
+        height: 200px;
+        background-image: url('../img/btn3.png');
+        /*color: black;
+        font-size: 60px;
+        opacity: 0.9;
+        border-color: black;*/
+
+
+
+}
+.titre {
+        text-align: center;
+        font-size: 150px;
+        font-weight: bold;
+        line-height: 20px;
+        margin-top: 150px;
+}
+
+
+.cadre_arrondi {
+        
+        margin-top: 50px;
+  
+}
+                         
+.contenu {
+
+        width: 350px;
+        height: 250px;
+        margin-left: 85px;
+        margin-top: 35px;
+        margin-right: -50px;
+        color: white;
+
+
+}
+.contenu p {
+        font-size: 20px;
+        text-align: center;
+        margin-left: -20px;
+        margin-top: -30px;
+        margin-bottom: 50px;
+}
+
+
+#erreur p {
+    color: red;
+    text-align: center;
+}
+*/

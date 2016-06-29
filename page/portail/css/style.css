@@ -1,0 +1,111 @@
+/* Propriété générales de mise en page */
+
+body { 
+	margin:20px;
+	padding:0;
+	font-family: Century Gothic, Arial, Helvetica, sans serif;
+	font-size;100%;
+	background-image: url('../img/fond.jpg'); 
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+p {
+	color: white;
+}
+
+a {
+	text-decoration: none;
+}
+
+td {
+	background-color: white;
+}
+
+h1 {
+	text-align: center;
+	color:#e3004f;
+	border-bottom: 1px dashed #fff;
+}
+h2 {
+	color:#ea6878;
+	padding-left: 0.6em;
+	border-left:1.3em solid #ea6878;
+}
+a {
+	color:#ccc;
+}
+
+a:hover {
+	color:#ea6878;
+}
+
+p {
+	margin:0;
+	padding:0;
+	color:#fff;
+}
+
+#map p {
+	margin:0;
+	color:#000;
+	font-size:0.8em;
+	width:222px;
+}
+
+p.mentions {
+	margin:0;
+	padding:10px 0px;
+	font-size:0.6em;
+}
+
+
+p.loader {
+	padding:7px 0;
+	text-align:center;
+	width:222px;
+}
+
+#conteneur {
+	width:900px;
+	padding:10px;
+	margin: 5px auto;
+}
+
+#conteneur form {
+	margin:0;
+	background:#3f3f3f;
+	padding: 4px;
+}
+
+#conteneur form label{
+	padding: 2px 0;
+}
+
+.orange {
+        color: #eea130;
+}
+.bleu {
+        color: #58adc4;
+}
+.rose {
+        color: #d94287;
+}
+.vert {
+        color: #99b92d;
+}
+.deux {
+        color: #2e64a6;
+}
+.zero {
+        color: #924490;
+}
+
+.titre {
+        text-align: center;
+        font-size: 150px;
+        font-weight: bold;
+        line-height: 20px;
+        margin-top: 50px;
+        margin-bottom: 100px;
+}

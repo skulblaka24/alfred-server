@@ -1,0 +1,429 @@
+/* #####################################################################
+   #
+   #   Project       : Alfred
+   #   Author        : Gauthier Donikian
+   #   Version       : 2.0
+   #
+   ##################################################################### */
+   
+body label { 
+  font-family: Roboto
+};
+
+body{
+  margin:0;
+  padding:0;
+    background:#FFF;
+    overflow-x:hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safari */
+
+
+/* Globals type styling */
+    h1, h2, h3, h4, h5, h6, p, label, .btn, a{
+  font-family:"Helvetica";
+}
+
+
+/* Site container width */
+
+.container{
+  width:100%;
+  padding-left:15px;
+  padding-right:15px;
+}
+
+/* = Blocs
+-------------------------------------------------------------- */
+
+.bloc{
+  width:100%;
+  clear:both;
+  background: 50% 50% no-repeat;
+  padding:0 50px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position:relative;
+}
+.bloc .container{
+  padding-left:0;
+  padding-right:0;
+}
+
+
+/* Sizes */
+
+.bloc-lg{
+  padding:100px 50px;
+}
+.bloc-sm{
+  padding:2px 5px;
+}
+
+
+/* Dark theme */
+
+.d-bloc{
+  color:rgba(255,255,255,.7);
+}
+.d-bloc button:hover{
+  color:rgba(255,255,255,.9);
+}
+.d-bloc h1, .d-bloc h2, .d-bloc h3, .d-bloc h4,.d-bloc h5, .d-bloc h6, .d-bloc .ico{
+  color:rgba(255,255,255,.9);
+}
+.d-bloc .icon-round,.d-bloc .icon-square,.d-bloc .icon-rounded,.d-bloc .icon-semi-rounded-a,.d-bloc .icon-semi-rounded-b{
+  border-color:rgba(255,255,255,.9);
+}
+.d-bloc .divider-h span{
+  border-color:rgba(255,255,255,.8);
+}
+.d-bloc a{
+  color:rgba(255,255,255,.6);
+}
+.d-bloc a:hover{
+  color:rgba(255,255,255,1);
+}
+.d-bloc .navbar-toggle .icon-bar{
+  background:rgba(255,255,255,1);
+}
+.d-bloc .btn-wire,.d-bloc .btn-wire:hover{
+  color:rgba(255,255,255,1);
+  border-color:rgba(255,255,255,1);
+}
+.d-bloc .panel{
+  color:rgba(0,0,0,.5);
+}
+.d-bloc .panel button:hover{
+  color:rgba(0,0,0,.7);
+}
+.d-bloc .panel h1,.d-bloc .panel h2, .d-bloc .panel h3, .d-bloc .panel h4, .d-bloc .panel h5, .d-bloc .panel h6, .d-bloc .ico{
+  color:rgba(0,0,0,.7);
+}
+.d-bloc .panel icon{
+  border-color:rgba(0,0,0,.7);
+}
+.d-bloc .panel .divider-h span{
+  border-color:rgba(0,0,0,.1);
+}
+.d-bloc .panel a{
+  color:rgba(0,0,0,.6);
+}
+.d-bloc .panel a:hover{
+  color:rgba(0,0,0,1);
+}
+.d-bloc .panel .btn-wire, .d-bloc .panel .btn-wire:hover{
+  color:rgba(0,0,0,.7);
+  border-color:rgba(0,0,0,.3);
+}
+
+
+/* Light theme */
+
+.l-bloc{
+  color:rgba(0,0,0,.5);
+}
+.l-bloc button:hover{
+  color:rgba(0,0,0,.7);
+}
+.l-bloc h1,.l-bloc h2,.l-bloc h3,.l-bloc h4,.l-bloc h5, .l-bloc h6, .l-bloc .ico{
+  color:rgba(0,0,0,.7);
+}
+.l-bloc .icon-round,.l-bloc .icon-square,.l-bloc .icon-rounded,.l-bloc .icon-semi-rounded-a,.l-bloc .icon-semi-rounded-b{
+  border-color:rgba(0,0,0,.7);
+}
+.l-bloc .divider-h span{
+  border-color:rgba(0,0,0,.1);
+}
+.l-bloc a{
+  color:rgba(0,0,0,.6);
+}
+.l-bloc a:hover{
+  color:rgba(0,0,0,1);
+}
+.l-bloc .navbar-toggle .icon-bar{
+  color:rgba(0,0,0,.6);
+}
+.l-bloc .btn-wire, .l-bloc .btn-wire:hover{
+  color:rgba(0,0,0,.7);
+  border-color:rgba(0,0,0,.3);
+}
+
+/* Bloc text custom styling */
+
+#bloc-2 h3{
+  line-height:50px;
+}
+
+
+
+
+/* = NavBar
+-------------------------------------------------------------- */
+.navbar{
+  margin-bottom: 0;
+}
+.navbar-img{
+  position: absolute;
+  z-index: 1;
+  margin-left: 48.5%;
+  padding-top: 10px;
+  
+}
+.navbar-pro{
+  position: absolute;
+  z-index: 2;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.navbar-brand{
+  height:50px;
+  font-size:25px!important;
+  font-weight:normal;
+  font-weight:600;
+}
+.navbar-brand img{
+  max-height: 50px;
+  /*display:inline;*/
+}
+.navbar-brand{
+  /*padding-top: -20px;*/
+}
+.navbar .nav{
+  /*padding-top: 0px;*/
+  margin-right: -16px;
+  float:right;
+  z-index:1;
+}
+.nav > li{
+  float:left;
+  margin-top:4px;
+  font-size:16px;
+}
+.navbar-nav .open .dropdown-menu > li > a{
+  text-align: inherit;
+}
+.nav > li a:hover, .nav > li a:focus{
+  background:transparent;
+}
+.navbar-toggle{
+  margin: 10px 10px 0 0;
+  border: 0px;
+}
+.navbar-toggle:hover{
+  background:transparent!important;
+}
+.navbar-toggle .icon-bar{
+  background-color: rgba(0,0,0,.5);
+  width: 26px;
+}
+ /* Inverted navbar */
+
+.nav-invert .navbar .nav{
+  float:left;
+}
+.nav-invert .navbar-header, .nav-invert .navbar-brand{
+  float:right;
+}
+@media (min-width: 768px){
+  .site-navigation{
+    position:absolute;
+    top:50%;
+    right:20px;
+    transform:translate(0, -50%);
+    -webkit-transform:translateY(-50%);
+  }
+  .nav-invert .site-navigation{
+    left:20px;
+    right:0;
+  }
+  .nav-center{
+    text-align:center;
+  }
+  .nav-center .navbar-header{
+    width:100%;
+  }
+  .nav-center .navbar-header, .nav-center .navbar-brand, .nav-center .nav > li{
+    float: none;
+    display:inline-block;
+  }
+  .nav-center .site-navigation{
+    position:relative;
+    width:100%;
+    margin-top:20px;
+  }
+}
+.nav > li > .dropdown a{
+  background: none!important;
+  display: block;
+  padding: 14px 15px;
+}
+
+nav .caret{
+  margin: 0 5px;
+}
+
+/* = Center
+-------------------------------------------------------------- */
+
+.v-center{
+  position: relative;
+  height: inherit;
+}
+.v-center .vc-content{
+  position:relative;
+  top:50%;
+  transform:translateY(-50%);
+  -webkit-transform:translateY(-50%);
+}
+
+
+/* = Custom Colour Styling
+-------------------------------------------------------------- */
+
+/* Background colour styles */
+
+.bgc-white {
+  background-color:#ffffff;
+}
+.bgc-black {
+  background-color:black;
+}
+.ft-white {
+  color:white;
+}
+.ft-black {
+  color:black;
+}
+.bgc-grey {
+  background-color:#333;
+}
+.bgc-black {
+  background-color: black;
+}
+
+/* Bloc image backgrounds */
+
+.bg-fond {
+  background-image:url('../../img/w-portail.jpg');
+}
+.bg-mountains {
+  background-image:url('../../img/w-mountains.jpg');
+}
+.bg-citysky {
+  background-image:url('../../img/w-citysky.jpg');
+}
+.bg-cirques {
+  background-image:url('../../img/w-cirques.jpg');
+}
+.bg-forrest {
+  background-image:url('../../img/w-forrest.jpg');
+}
+.bg-iphone {
+  background-image:url('../../img/w-iphone.jpg');
+}
+
+
+.img-mod {
+  background-image:url('../../img/modifier.png');
+  background-size: 28px;
+  height: 30px;
+  width: 30px;
+}
+.img-delete {
+  background-image:url('../../img/croix.png');
+  background-size: 28px;
+  height: 30px;
+  width: 30px;
+}
+
+/* ##################################### CONTENU ##############################################*/
+
+.settings_nav {
+  display: inline;
+  text-align: center;
+  margin-top: 20px;
+  background-color: transparent;
+}
+
+.settings_navbar > li{
+  color: white;
+  display: inline-block;
+  font-size:16px;
+  margin-right: 46px;
+  margin-top: 20px;
+}
+
+.nav-link:hover {
+  text-decoration: none;
+  cursor:pointer;
+  color: #9EA0A1;
+}
+
+.nav-link:link {
+  color: white;
+}
+
+.nav-link:visited {
+  color: white;
+}
+
+.nav-current {
+ border-bottom : 2px solid #30b7b7;
+}
+
+.nav-img {
+  height: 20px;
+  width: 24px;
+}
+
+.form {
+  display: inline;
+  margin-left: 1%;
+}
+
+.bloc-1-input {
+  display: inline-block;
+  padding-right: 110px;
+}
+
+.bloc-2-input {
+  display: inline-block;
+  padding-right: 110px;
+}
+
+.bloc-3-input {
+  display: inline-block;
+  padding-right: 110px;
+}
+
+.bloc-4-input {
+  display: inline-block;
+  padding-right: 110px;
+
+}
+.bloc-5-input {
+  display: inline-block;
+}
+.btn-submit {
+  margin-top:20px;
+  width: 170px; 
+  margin-right:auto;
+  margin-left:auto;
+}
+
+
+
+
+
+
+
+
+
+

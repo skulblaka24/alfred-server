@@ -1,0 +1,104 @@
+
+body {
+       background-image: url('../img/fond.jpg'); 
+       background-repeat:no-repeat;
+       background-size:cover;
+       margin-left: auto;
+       margin-right: auto;
+}
+#connexion{
+        margin-left: 60px;
+}
+
+.titre {
+        text-align: center;
+        font-size: 150px;
+        font-weight: bold;
+        line-height: 20px;
+        margin-top: 100px;
+}
+.orange {
+        color: #eea130;
+}
+.bleu {
+        color: #58adc4;
+}
+.rose {
+        color: #d94287;
+}
+.vert {
+        color: #99b92d;
+}
+.deux {
+        color: #2e64a6;
+}
+.zero {
+        color: #924490;
+}
+
+.cadre_arrondi {
+        width: 450px;
+        height: 350px;
+        background-image: url('../img/fond2.png');
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 170px;
+        
+  
+}
+                         
+.hg, .hd, .bg, .bd {
+        width: 50px;
+        height: 50px;
+}
+                 
+.haut, .bas {
+        width: 450px;
+        height: 50px;
+}
+                         
+.gauche, .droite {
+        width: 50px;
+        height: 350px;
+}
+                         
+.contenu {
+
+        
+        width: 283px;
+        height: 110px;
+        margin-left: 40px;
+        margin-top: -30px;
+        margin-right: auto;
+        
+
+}
+.contenu p {
+        font-size: 20px;
+        text-align: center;
+        
+        
+}
+input {
+
+    margin-left: 30px;
+    margin-top: 10px;
+
+}
+
+.cadre_arrondi div { float: left; } /* S'apllique à tous les divs de .cadre_arrondi */
+
+.hg, .gauche, .bg { clear: left; } /* Pour passer outre le float des blocs précédents */
+
+#erreur p {
+    color: red;
+    text-align: center;
+}
+.btn-xlarge {
+    padding: 28px 38px;
+    font-size: 25px;
+    line-height: normal;
+    -webkit-border-radius: 10px;
+       -moz-border-radius: 10px;
+            border-radius: 10px;
+    }

@@ -1,0 +1,1016 @@
+/* #####################################################################
+   #
+   #   Project       : Alfred
+   #   Author        : Gauthier Donikian
+   #   Version       : 2.0
+   #
+   ##################################################################### */
+
+body{
+  margin:0;
+  padding:0;
+    background:#FFF;
+    overflow-x:hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.nav-link:hover{text-decoration: none; cursor:pointer;}
+
+a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safari */
+
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Globals type styling */
+    h1, h2, h3, h4, h5, h6, p, label, .btn, a{
+  font-family:"Helvetica";
+}
+
+
+/* Site container width */
+
+.container{
+  width:100%;
+  padding-left:15px;
+  padding-right:15px;
+}
+
+/* = Blocs
+-------------------------------------------------------------- */
+
+.bloc{
+  width:100%;
+  clear:both;
+  background: 50% 50% no-repeat;
+  padding:0 50px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position:relative;
+}
+.bloc .container{
+  padding-left:0;
+  padding-right:0;
+}
+
+
+/* Sizes */
+
+.bloc-lg{
+  padding:100px 50px;
+}
+.bloc-sm{
+  padding:2px 5px;
+}
+
+
+/* Dark theme */
+
+.d-bloc{
+  color:rgba(255,255,255,.7);
+}
+.d-bloc button:hover{
+  color:rgba(255,255,255,.9);
+}
+.d-bloc h1, .d-bloc h2, .d-bloc h3, .d-bloc h4,.d-bloc h5, .d-bloc h6, .d-bloc .ico{
+  color:rgba(255,255,255,.9);
+}
+.d-bloc .icon-round,.d-bloc .icon-square,.d-bloc .icon-rounded,.d-bloc .icon-semi-rounded-a,.d-bloc .icon-semi-rounded-b{
+  border-color:rgba(255,255,255,.9);
+}
+.d-bloc .divider-h span{
+  border-color:rgba(255,255,255,.8);
+}
+.d-bloc a{
+  color:rgba(255,255,255,.6);
+}
+.d-bloc a:hover{
+  color:rgba(255,255,255,1);
+}
+.d-bloc .navbar-toggle .icon-bar{
+  background:rgba(255,255,255,1);
+}
+.d-bloc .btn-wire,.d-bloc .btn-wire:hover{
+  color:rgba(255,255,255,1);
+  border-color:rgba(255,255,255,1);
+}
+.d-bloc .panel{
+  color:rgba(0,0,0,.5);
+}
+.d-bloc .panel button:hover{
+  color:rgba(0,0,0,.7);
+}
+.d-bloc .panel h1,.d-bloc .panel h2, .d-bloc .panel h3, .d-bloc .panel h4, .d-bloc .panel h5, .d-bloc .panel h6, .d-bloc .ico{
+  color:rgba(0,0,0,.7);
+}
+.d-bloc .panel icon{
+  border-color:rgba(0,0,0,.7);
+}
+.d-bloc .panel .divider-h span{
+  border-color:rgba(0,0,0,.1);
+}
+.d-bloc .panel a{
+  color:rgba(0,0,0,.6);
+}
+.d-bloc .panel a:hover{
+  color:rgba(0,0,0,1);
+}
+.d-bloc .panel .btn-wire, .d-bloc .panel .btn-wire:hover{
+  color:rgba(0,0,0,.7);
+  border-color:rgba(0,0,0,.3);
+}
+
+
+/* Light theme */
+
+.l-bloc{
+  color:rgba(0,0,0,.5);
+}
+.l-bloc button:hover{
+  color:rgba(0,0,0,.7);
+}
+.l-bloc h1,.l-bloc h2,.l-bloc h3,.l-bloc h4,.l-bloc h5, .l-bloc h6, .l-bloc .ico{
+  color:rgba(0,0,0,.7);
+}
+.l-bloc .icon-round,.l-bloc .icon-square,.l-bloc .icon-rounded,.l-bloc .icon-semi-rounded-a,.l-bloc .icon-semi-rounded-b{
+  border-color:rgba(0,0,0,.7);
+}
+.l-bloc .divider-h span{
+  border-color:rgba(0,0,0,.1);
+}
+.l-bloc a{
+  color:rgba(0,0,0,.6);
+}
+.l-bloc a:hover{
+  color:rgba(0,0,0,1);
+}
+.l-bloc .navbar-toggle .icon-bar{
+  color:rgba(0,0,0,.6);
+}
+.l-bloc .btn-wire, .l-bloc .btn-wire:hover{
+  color:rgba(0,0,0,.7);
+  border-color:rgba(0,0,0,.3);
+}
+
+/* Bloc text custom styling */
+
+#bloc-2 h3{
+  line-height:50px;
+}
+
+
+/* DEBUG DEBUG DEBUG DEBUG */
+#bloc-3 {
+  width: 100%;
+}
+#bloc-3-i {
+  width: 80%;
+  margin-left: 12%;
+}
+/* DEBUG DEBUG DEBUG DEBUG */
+
+
+
+/* = NavBar
+-------------------------------------------------------------- */
+.navbar{
+  margin-bottom: 0;
+}
+.navbar-img{
+  position: absolute;
+  z-index: 1;
+  margin-left: 48.5%;
+  padding-top: 10px;
+  
+}
+.navbar-pro{
+  position: absolute;
+  z-index: 2;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.navbar-brand{
+  height:50px;
+  font-size:25px!important;
+  font-weight:normal;
+  font-weight:600;
+}
+.navbar-brand img{
+  max-height: 50px;
+}
+.navbar-brand{
+  /*padding-top: -20px;*/
+}
+.navbar .nav{
+  /*padding-top: 0px;*/
+  margin-right: -16px;
+  float:right;
+  z-index:1;
+}
+.nav > li{
+  float:left;
+  margin-top:4px;
+  font-size:16px;
+}
+.navbar-nav .open .dropdown-menu > li > a{
+  text-align: inherit;
+}
+.nav > li a:hover, .nav > li a:focus{
+  background:transparent;
+}
+.navbar-toggle{
+  margin: 10px 10px 0 0;
+  border: 0px;
+}
+.navbar-toggle:hover{
+  background:transparent!important;
+}
+.navbar-toggle .icon-bar{
+  background-color: rgba(0,0,0,.5);
+  width: 26px;
+}
+ /* Inverted navbar */
+
+.nav-invert .navbar .nav{
+  float:left;
+}
+.nav-invert .navbar-header, .nav-invert .navbar-brand{
+  float:right;
+}
+@media (min-width: 1176px){
+  .site-navigation{
+    position:absolute;
+    top:50%;
+    right:20px;
+    transform:translate(0, -50%);
+    -webkit-transform:translateY(-50%);
+  }
+  .nav-invert .site-navigation{
+    left:20px;
+    right:0;
+  }
+  .nav-center{
+    text-align:center;
+  }
+  .nav-center .navbar-header{
+    width:100%;
+  }
+  .nav-center .navbar-header, .nav-center .navbar-brand, .nav-center .nav > li{
+    float: none;
+    display:inline-block;
+  }
+  .nav-center .site-navigation{
+    position:relative;
+    width:100%;
+    margin-top:20px;
+  }
+  
+}
+.nav > li > .dropdown a{
+  background: none!important;
+  display: block;
+  padding: 14px 15px;
+}
+
+nav .caret{
+  margin: 0 5px;
+}
+
+/* = Center
+-------------------------------------------------------------- */
+
+.v-center{
+  position: relative;
+  height: inherit;
+}
+.v-center .vc-content{
+  position:relative;
+  top:50%;
+  transform:translateY(-50%);
+  -webkit-transform:translateY(-50%);
+}
+
+/* = Buttons
+-------------------------------------------------------------- */
+
+/*.btn{
+  margin: 0 5px 5px 0;
+}*/
+.btn.pull-right{
+  margin: 0 0 5px 5px;
+}
+.btn-d,.btn-d:hover,.btn-d:focus{
+  color:#FFF!important;
+  background:rgba(0,0,0,.3);
+}
+
+/* Prevent ugly blue glow on chrome and safari */
+button{
+  outline: none!important;
+}
+
+.dropdown a .caret{
+  margin:0 0 0 5px}
+
+/* Empty space fillers - Used on empty blocs to fill them out */
+
+.empty-column,.empty-column.thin{
+  width:100%;
+  height:350px;
+  display:inline-block;
+}
+.empty-column{
+  height:350px;
+}
+.empty-column.thin{
+  height:150px;
+}
+
+/* ########################################################################### */
+
+
+
+
+/* ################################################## */
+
+
+/* ########################################################################### */
+
+
+/* = Custom Colour Styling
+-------------------------------------------------------------- */
+
+/* Background colour styles */
+
+.bgc-white{
+  background-color:#ffffff;
+}
+.bgc-black{
+  background-color:black;
+}
+.ft-white{
+  color:white;
+}
+.ft-black{
+  color:black;
+}
+.bgc-grey{
+  background-color:#333;
+}
+
+/* Bloc image backgrounds */
+
+.bg-fond {
+  background-image:url('../../img/w-portail.jpg');
+}
+.bg-mountains {
+  background-image:url('../../img/w-mountains.jpg');
+}
+.bg-citysky {
+  background-image:url('../../img/w-citysky.jpg');
+}
+.bg-iphone-bloc {
+  background-image:url('../../img/w-iphone.jpg');
+  min-height:740px;
+}
+.bg-cirques {
+  background-image:url('../../img/w-cirques.jpg');
+}
+.bg-forrest {
+  background-image:url('../../img/w-forrest.jpg');
+}
+.bg-iphone {
+  background-image:url('../../img/w-iphone.jpg');
+}
+.black {
+  background-color: black;
+}
+
+    /* ############### MOD Ligne Ping ############## */
+    .modal-body {
+      width: 100%;
+    }
+    .container-fluid {
+      margin-top: -90px;
+      text-align:center;
+      width: 100%;
+    }
+    .dbloc-title {
+      height: 100px;
+    }
+    .d-title {
+      margin-top: -15px;
+    }
+    /* = App
+    -------------------------------------------------------------- */
+/* Titre dans le centre de la navbar */
+  .title {
+      display: inline-block;
+      margin-top: 0px;
+      margin-left: -5px;
+  }
+  .title_img {
+      margin-left: -40%;
+      margin-top: -3px;
+  }
+/* END Titre dans le centre de la navbar */
+
+/* Menu de selection de type de relai */
+  
+  .relai_menu {
+    display: inline-block;
+    vertical-align:top;
+    
+    text-align:center;
+    
+    margin-top: 0px;
+    margin-bottom: 10px;
+    
+    width: 252px;
+  }
+  
+  /* Ampoule Menu */
+  
+  .amp_menu_title {
+    margin-top: 0px;
+    height: 40px;
+    width: 252px;
+    border-radius: 5px;
+    border:1px solid white;
+  }
+  .amp_txt_title {
+    margin-top: 6px;
+    font-size: 20px;
+    color: white;
+  }
+  .amp_menu {
+    display: block;
+    overflow:auto;
+    
+    max-height: 500px;
+    margin-top: 3px;
+  }
+  .amp_btn {              
+    display: block;
+    position: relative;
+    
+    margin-top: 2px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    
+    width: 252px;
+    height: 60px;
+    
+    cursor: pointer;
+    font-size: 25px;
+    color: white;
+    
+    border-radius: 5px;
+    border:1px solid white;
+  }
+  
+  /* Prise Menu */
+  
+  .pri_menu_title {
+    margin-top: 0px;
+    height: 40px;
+    width: 252px;
+    border-radius: 5px;
+    border:1px solid white;
+  }
+  .pri_txt_title {
+    margin-top: 6px;
+    font-size: 20px;
+    color: white;
+  }
+  .pri_menu {
+    display: block;
+    overflow:auto;
+    
+    max-height: 500px;
+    margin-top: 3px;
+  }
+  .pri_btn {              
+    display: inline-block;
+    
+    margin-top: 2px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    
+    width: 252px;
+    height: 60px;
+    
+    cursor: pointer;
+    font-size: 25px;
+    color: white;
+    
+    border-radius: 5px;
+    border:1px solid white;
+    
+  }
+   /* Room Menu */
+  
+  .room_menu_title {
+    margin-top: 0px;
+    height: 40px;
+    width: 252px;
+    border-radius: 5px;
+    border:1px solid white;
+    
+  }
+  .room_txt_title {
+    margin-top: 6px;
+    font-size: 20px;
+    color: white;
+  }
+  .room_menu {
+    display: block;
+    overflow:auto;
+    
+    max-height: 500px;
+    margin-top: 3px;
+  }
+  
+  /* CMD Menu */
+  
+  .cmd_menu_title {
+    margin-top: 0px;
+    height: 40px;
+    width: 252px;
+    border-radius: 5px;
+    border:1px solid white;
+  }
+  .cmd_txt_title {
+    margin-top: 6px;
+    font-size: 20px;
+    color: white;
+  }
+  .cmd_menu {
+    display: block;
+    overflow:auto;
+    
+    max-height: 500px;
+    margin-top: 3px;
+  }
+  .cmd_btn {              
+    display: inline-block;
+    position: relative;
+    
+    margin-top: 2px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    
+    width: 252px;
+    height: 60px;
+    
+    cursor: pointer;
+    font-size: 25px;
+    color: white;
+    
+    border-radius: 5px;
+    border:1px solid white;
+    
+  }
+    /* Other Menu */
+  
+  .oth_menu_title {
+    margin-top: 0px;
+    height: 40px;
+    width: 252px;
+    border-radius: 5px;
+    border:1px solid white;
+  }
+  .oth_txt_title {
+    margin-top: 6px;
+    font-size: 20px;
+    color: white;
+    
+  }
+  .oth_menu {
+    display: block;
+    overflow:auto;
+    
+    max-height: 500px;
+    margin-top: 3px;
+  }
+  .oth_btn {              
+    display: inline-block;
+    position: relative;
+    
+    margin-top: 2px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    
+    width: 252px;
+    height: 60px;
+    
+    cursor: pointer;
+    font-size: 25px;
+    color: white;
+    
+    border-radius: 5px;
+    border:1px solid white;
+    
+  }
+
+  .btn_title {
+    margin-top: 4px;
+    margin-left: 0px;
+    font-size: 20px;
+    color: white;
+
+  }
+  .room_name{
+    margin-top: 0px;
+    margin-left: 0px;
+    font-size: 14px;
+    color: white;
+  }
+  
+/* Constitue l'ensemble des boutons des relais */
+  .btn_img { 
+
+    display: block;
+    height: 20px;
+    width: 20px;
+    margin-top: -39px;
+    margin-left: 5px;
+    cursor: pointer;
+
+  }
+  .btn_imgc { 
+
+    display: block;
+    height: 20px;
+    width: 20px;
+    margin-top: -34px;
+    margin-left: 5px;
+    cursor: pointer;
+
+  }
+  .btn_imgo { 
+
+    display: block;
+    height: 20px;
+    width: 20px;
+    margin-top: -36px;
+    margin-left: 5px;
+    cursor: pointer;
+
+  }
+  .imgb, .imgi, .imgp {
+    position: absolute;
+    z-index: 1;
+  }
+
+  .imgi {
+    z-index: 2;
+    width: 33px;
+    height: 30px;
+  }
+  .imgic {
+    z-index: 2;
+    margin-left:13px;
+    width: 27px;
+    height: 24px;
+  }
+  .imgio {
+    z-index: 2;
+    margin-left:13px;
+    width: 30px;
+    height: 27px;
+  }
+  .imgp {
+    margin-left: 213px;
+    margin-top: -30px;
+    width: 15px;
+    height: 15px;
+  }
+  .imgpc {
+    margin-left: 213px;
+    margin-top: -20px;
+    width: 15px;
+    height: 15px;
+  }
+  .imgpo {
+    margin-left: 213px;
+    margin-top: -22px;
+    width: 15px;
+    height: 15px;
+  }
+
+  .room_choice {
+    display: none;
+    position: absolute;
+    background-image:url('../../img/bgi-white-iphone.png');
+    top: 0px;
+    height: 0%;
+    width: 0%;
+    z-index: 9;
+  }
+  .room_title {
+    display: block;
+    position: absolute;
+
+    margin-top: 10px;
+    margin-left: 45px;
+
+    font-size: 23px;
+    color: black;
+  }
+  .room_btn_block {
+    display: block;
+    margin-top: 50px;
+  }
+  #btn_room {               /* Chacun des boutons */
+
+    display: inline-block;
+
+    margin-top: 2px;
+    margin-left: 2px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+
+    height: 95px;
+    width: 157px;
+    cursor: pointer;
+    font-size: 25px;
+    color: black;
+
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: black;
+    z-index: 10;
+  }
+  .btn_room_title {
+    display: block;
+    margin-top: 26px;
+    margin-left: 0px;
+    font-size: 20px;
+    color: black;
+    z-index: 10;
+
+  }
+/* END Constitue l'ensemble des boutons des relais */
+
+/* Signature de bas de page */
+  #sign_div {
+    margin-top: 200px;
+    margin-bottom: -80px;
+  }
+
+  #sign_text {
+    width: 300px;
+    margin:auto;
+    text-align: center;
+  }
+  #sign_text_i {
+    width: 350px;
+    margin:auto;
+    margin-bottom: 8px;
+  }
+/* END Signature de bas de page */
+
+
+/* Trigered by JS */
+
+  .surligne {
+    border:2px solid white;
+  }
+  .show-none {
+    display: none;
+  }
+  .show {
+    display: block;
+  }
+  .show-inline {
+    display: inline-block;
+    position: relative;
+  }
+  .show_room_choice {
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 340px;
+    z-index: 9;
+  }
+  .full {
+    width:100%;
+  }
+  .center {
+    margin:auto;
+    width:1200px;
+  }
+  
+  /* ################################################## */
+
+/* = Mobile adjustments 
+-------------------------------------------------------------- */
+@media (max-width: 1176px)
+{
+    .page {
+      z-index: 1;
+    }
+    .bloc{
+        padding-left: 20px; 
+        padding-right: 20px; 
+    }
+    
+}
+@media (max-width: 1176px)
+{
+    .container{width:100%;}
+    .b-parallax{background-attachment:scroll;}
+    .page-container, #hero-bloc{overflow-x: hidden;position: relative;} /* Prevent unwanted side scroll on mobile */  
+}
+@media (max-width: 1176px)
+{
+
+    .page-container{
+        overflow-x: hidden;
+        position:relative;
+    }
+    h1,h2,h3,h4,h5,h6,p{
+        padding-left:10px!important; 
+        padding-right:10px!important; 
+    }
+    .bloc{
+        padding-left: 0; 
+        padding-right: 0;  
+        -webkit-background-size: auto 200%;
+        -moz-background-size: auto 200%;
+        -o-background-size: auto 200%;
+        background-size: auto 200%;
+    }
+    .b-parallax{
+        background-attachment:scroll;
+    }
+    
+    .navbar .nav{
+        /*padding-top: 0;*/
+        border-top:1px solid rgba(0,0,0,.2);
+        float:none!important;
+    }
+    .navbar.row{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .site-navigation{
+     position:inherit;
+     transform:none;
+     -webkit-transform:none;
+     -ms-transform:none;
+    }
+    .navbar-img{
+            margin-left: 45%;
+    }
+    .nav > li{
+        /*margin-top: 0;*/
+        border-bottom:1px solid rgba(0,0,0,.1);
+        background:rgba(0,0,0,.05);
+        text-align: left;
+        padding-left:15px;
+        width:100%;
+    }
+    .nav > li:hover{
+        background:rgba(0,0,0,.08);
+    }
+    #hero-bloc .navbar .nav{
+        background:rgba(0,0,0,.8);
+    }
+    #hero-bloc .navbar .nav a{
+        color:rgba(255,255,255,.6);
+    }
+    .navbar-collapse{
+        padding:0;
+        overflow-x: hidden;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+    .navbar-brand img{
+        max-height: 40px;
+        width:auto;
+        /*margin: -10px 10px 0 0; */   
+    }
+    .nav-invert .navbar-header{
+        float: none;
+        width:100%;
+    }
+    .nav-invert .navbar-toggle{
+        float:left; 
+    }
+    .btn.pull-left, .btn.pull-right{
+       float:none!important; 
+    }
+    .bloc-group .bloc{
+         display:block;
+         width:100%;
+    }
+    .bloc-tile-2 .container, .bloc-tile-3 .container, .bloc-tile-4 .container{
+     padding-left: 10px;
+     padding-right: 10px;
+    }
+    .bloc-xxl,.bloc-xl,.bloc-lg{
+        padding: 40px 0;
+    }
+    .bloc-sm,.bloc-md{
+        padding-left: 0; 
+        padding-right: 0;
+    }
+    .a-block{
+        padding:0 10px;
+    }
+    .btn-dwn{
+       display:none; 
+    }
+    .voffset{
+        margin-top:5px;
+    }
+    .voffset-md{
+        margin-top:20px;
+    }
+    .voffset-lg{
+        margin-top:30px;
+    }
+    form{
+        padding:5px;
+    }
+    .close-lightbox{
+        display:inline-block;
+    }
+    .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+        margin-top: 30px;
+        margin-bottom: 39px;
+    }
+    .container-fluid {
+      margin-top: -30px;
+      width: 100%;
+    }
+    .relai_menu {
+    display: inline-block;
+    vertical-align:top;
+    
+    text-align:center;
+    
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-right: 30px;
+    margin-left: 30px;
+    
+    width: 252.8px;
+  }
+  #sign_div {
+    margin-top: 10px;
+    margin-bottom: -30px;
+  }
+    
+}
+
+
+/* Overriding Bootstrip to change toggle breakpoint */
+@media (max-width: 1176px) {
+  .navbar-header {
+      float: none;
+  }
+  .navbar-left,.navbar-right {
+      float: none !important;
+  }
+  .navbar-toggle {
+      display: block;
+  }
+  .navbar-collapse {
+      border-top: 1px solid transparent;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-fixed-top {
+      top: 0;
+      border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+      display: none!important;
+  }
+  .navbar-nav {
+      float: none!important;
+      margin-top: 7.5px;
+  }
+  .navbar-nav>li {
+      float: none;
+  }
+  .navbar-nav>li>a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+  .collapse.in{
+      display:block !important;
+  }
+}
+
