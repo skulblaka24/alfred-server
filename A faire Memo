@@ -1,3 +1,125 @@
+Dashboard
+
+	ajout les stat machines dans le dashboard
+
+	Retirer l’animation des serveurs dans le dashboard iphone
+
+	/i\ Page en https enpeche les redir de iframes
+
+	Recap des machines sur le Dashboard 
+
+	Fenêtre détaillé des machines puis slip right to go to the interface and again to go to terminal.
+
+	Section favoris sur le Dashboard(Scénario/relais)
+
+	Sur le dashboard, il y a le chargement de deux fond d’écran 
+
+
+Portail
+
+	Le bouton fermer le portail à l’écriture trop petite
+
+
+
+
+Planificateur de tâches
+
+	Utiliser Cron -e pour les taches automatiques
+
+
+
+Relais
+
+	Relier les pieces avec la BDD
+
+	Création de pièces
+
+	Combiné bouton unique pour toutes les lampes d'une pièce (Scenario)
+
+	Gestion par pièce comme dans l’app domicile
+
+	Mettre une animation sur les boutons pour voir que l’on a bien cliqué dessus
+
+
+
+
+Settings
+
+	Explication settings rond i avec modal qui apparait
+
+	Page de transition entre les settings ordi et iPhone —- DROPED
+
+	Au retour des settings, le faire revenir sur dashboard.php et être sur que l’iphone sera bien rediriger
+
+	Faire un settings de planification de taches
+
+	Réparer la modif des users
+
+	Génération des actions kalliope depuis le settings Alfred
+
+	Le champs password dans cc ne se débloque pas
+
+
+
+
+Autres
+
+	passwords ssh à crypter --- $password=sha1($_POST['id_password']); /i\ Par comparaison !!!!
+	Algo de cryptage à créer
+
+	Script d'install de radioEmission et web (penser à ping-daemon screen -dmS)
+
+	Ajouter un lien vers les settings normaux depuis l'iphone juste pour moi
+
+	Faire un reporting des actions des users
+
+	Icon a mettre partout: <link rel="apple-touch-icon" sizes="180x180" href="http://zupimages.net/up/16/51/31l6.png">
+
+	Icône user pour portail page user jojo iPhone
+
+	Gérer les access ad SESSION dans toutes les pages et verifier BDD a bien le parametre
+
+
+Iphone
+
+	Recheck de tous les points pour la version iPhone
+
+	Changer le toggle breakpoint sur iPhone (IDK)
+
+	
+
+	Redirection de la page d’accueil de l’iphone donne accès aux settings
+
+
+
+
+
+
+
+faire un htaccess: Apparemment j’ai déjà sur le serveur 
+####################################################
+
+#	Redirection automatique vers https
+
+####################################################
+
+RewriteEngine On
+RewriteCond %{HTTPS} !on
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+
+
+
+
+
+
+
+
+
+————————————————————— CHECK ——————————————————————————
+
+
+Changer en png l’extension de l’image users sur iPhone — CHECK
+
 Utiliser les données dans settings portails --- CHECK
 
 centraliser les acces BDD avec include --- CHECK
@@ -16,58 +138,26 @@ Faire la page standard des relais — CHECK
 
 Ameliorer settings utilisateur --- Suppression pour le tel ? —- CHECK
 
-passwords ssh à crypter --- $password=sha1($_POST['id_password']); /i\ Par comparaison !!!!
-Algo de cryptage à créer
-
-Relier les pieces avec la BDD
-
-Création de pièces
 
 Cookie pour les pages settings —- CHECK
 
-Supprimer les settings version iPhone
+Supprimer les settings version iPhone —- CHECK
 
-Recheck de tous les points pour la version iPhone
 
-Changer le toggle breakpoint sur iPhone
-
-changer en png l’extension de l’image users sur iPhone
-
-Vérifier l’attr css footer for the iPhone portail page (bug ?)
+Vérifier l’attr css footer for the iPhone portail page (bug ?) —- CHECK
 
 vérif des input cc settings —-  $(this).removeAttr('disabled'); —- CHECK
 
-Combiné bouton unique pour toutes les lampes d'une pièce
+Faire le choix des pièces page relai —- CHECK
 
-Faire le choix des pièce page relai
+Ajout de users — CHECK
 
-Support de alfredvoice sur les page
+Gerer les permissions par users — CHECK
 
-ajout les stat machines dans le dashboard
-
-Explication sttings rond i avec modal qui apparait
-
-Script d'install de radioEmission et web (penser à ping-daemon screen -dmS)
-
-Faire un lien direct entre les pages et leurs settings
-
-Changer la couleur dans la partie de la navbar iPhone #333 —- CHECK
-
-Page de transition entre les settings ordi et iPhone
-
-Navbar fixed
+Navbar fixed —- CHECK
 
 dans le dashboard fixé la signature à la fin de la page —- CHECK
 
+Changer la couleur dans la partie de la navbar iPhone #333 —- CHECK
+
 limité l’étendu de app_menu dans le dashboard —- CHECK
-
-Ajouté un lien vers les settings normaux depuis l'iphone
-
-Au retour des settings, le faire revenir sur dashboard.php et être sur que l’aphone sera bien rediriger
-
-Retirer l’animation des serveurs dans le dashboard iphone
-
-/i\ Page en https enpeche les redir de iframes
-
-
-

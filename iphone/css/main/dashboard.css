@@ -649,7 +649,145 @@ button{
     }
 }
     /* ############### ############## */
-    
+
+
+/* CSS Iphone 6,6S,7 et plus */
+@media (max-width: 416px)
+{    
+	html{
+		height:calc(100% - 0px);
+	}
+	body{
+		height: 100%;
+	}
+	.full-height {
+		height: 100%;
+	}
+	.full-wnav-height {
+		height: calc(100% - 50px);
+	}
+	.center {
+	    margin:auto;
+	    width:375px;
+		height:520px;
+	}
+
+	.container {
+		padding: 0px;
+	}
+	.modal-body {
+		margin:0px;
+		padding: 0px;
+		width: 375px;
+		height:560px;
+
+    }
+	
+    .container-fluid {
+    	margin: 0px;
+		padding: 0px;
+    	width: 375px;
+		max-height: calc(100% - 5px);
+		overflow: auto;
+    }
+    .dbloc-title {
+      height: 100px;
+    }
+    .d-title {
+      margin-top: -15px;
+    }
+    /* = App
+		-------------------------------------------------------------- */
+	
+	.app_menu {          /* Constitue l'ensemble des applications */
+	
+		display: inline;
+		color: white;
+		margin-top: 10px;
+		
+	}
+
+	#app {               /* Chacune des apps */
+
+		display: inline-block;
+		margin-top: 2px;
+		margin-left: 1.5px;
+		margin-bottom: 0px;
+		margin-right: 0px;
+		height: 95px;
+		width: 371px;
+		cursor: pointer;
+		font-size: 25px;
+        color: white;
+        border-radius: 5px;
+        border-width: 1px;
+        border-color: white;
+	}
+	.app_img {           /* Image et ombre des apps */
+
+		display: block;
+		height: 40px;
+		width: 40px;
+		margin-top: -30px;
+		margin-left: 0px;
+		cursor: pointer;
+
+	}
+	.app_title {
+		margin-top: 0px;
+		margin-left: 0px;
+		font-size: 15px;
+		color: white;
+
+	}
+	.app_ip {
+		margin-top: 0px;
+		margin-left: 0px;
+		font-size: 20px;
+		color: white;
+	}
+
+	.imgb, .imgi, .imgp {
+		position: absolute;
+		z-index: 1;
+	}
+	.imgb {
+
+		z-index: 2;
+		display: none;
+	}
+
+	.imgi {z-index: 2;}
+
+
+	
+	.title {
+	    display: inline-block;
+	    margin-top: 7px;
+	    margin-left: -5px;
+	}
+	.title_img {
+	    margin-left: -40%;
+	    margin-top: -2px;
+
+	}
+	#sign_div {
+		margin-top: 20px;
+	}
+	.sign_bar{
+		margin-left: 27px;
+	}
+	#sign_text {
+		text-align: center;
+	}
+	#sign_text_i {
+	}
+
+}
+
+/* CSS Iphone 5,5S */
+@media (max-width: 321px)
+{    
 	html{
 		height:calc(100% - 0px);
 	}
@@ -683,7 +821,7 @@ button{
     	margin: 0px;
 		padding: 0px;
     	width: 320px;
-		max-height: calc(100% - 30px);
+		max-height: calc(100% - 5px);
 		overflow: auto;
     }
     .dbloc-title {
@@ -768,7 +906,7 @@ button{
 
 	}
 	#sign_div {
-		
+		margin-top: 20px;
 	}
 	.sign_bar{
 		margin-left: -2px;
@@ -778,4 +916,11 @@ button{
 	}
 	#sign_text_i {
 	}
+
+}
+
+
+
+
+
 

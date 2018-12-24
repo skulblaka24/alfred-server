@@ -114,7 +114,11 @@
 					<h3 class="text-center ">
 						<i class="ft-white">"Welcome Master to Alfred's Dashboard"</i>
 					</h3>
-					<a class="next_btn" href="./dashboard.php"><img class="next_btn" src="../img/next_btn.png" alt="logo" /></a>
+					<?php if ($_SESSION['username'] == "skulblaka24") {?> 
+                    <a class="next_btn" href="./dashboard.php"><img class="next_btn" src="../img/next_btn.png" alt="logo" /></a>
+                    <?php } if ($_SESSION['username'] != "skulblaka24") { ?>
+                    <a class="next_btn" href="./portail.php"><img class="next_btn" src="../img/next_btn.png" alt="logo" /></a>
+                    <?php } ?>
 				</div>
 			</div>
 		</div>

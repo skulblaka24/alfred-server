@@ -1,8 +1,12 @@
-{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf340
-{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Consolas;}
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf600
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Consolas;\f2\fnil\fcharset0 Menlo-Regular;
+}
 {\colortbl;\red255\green255\blue255;\red26\green26\blue26;\red59\green90\blue27;\red88\green209\blue235;
 \red29\green30\blue26;\red246\green246\blue239;\red10\green86\blue216;\red244\green0\blue95;\red223\green145\blue103;
-}
+\red58\green255\blue9;\red54\green62\blue79;}
+{\*\expandedcolortbl;\csgray\c100000;\csgenericrgb\c10196\c10196\c10196;\csgenericrgb\c23137\c35294\c10588;\csgenericrgb\c34510\c81961\c92157;
+\csgenericrgb\c11373\c11765\c10196;\csgenericrgb\c96471\c96471\c93725;\csgenericrgb\c3922\c33725\c84706;\csgenericrgb\c95686\c0\c37255;\csgenericrgb\c87451\c56863\c40392;
+\csgenericrgb\c22745\c100000\c3529;\csgenericrgb\c21176\c24314\c30980;}
 {\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}}{\leveltext\leveltemplateid1\'01\'00;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
 {\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
 \paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
@@ -16,8 +20,7 @@ Le code de l\'92interface web+programme C qui \'e9met les signaux radio est t\'e
 \pard\tx220\tx720\pardeftab720\li720\fi-720\parhyphenfactor20\partightenfactor0
 \ls1\ilvl0\cf0 \kerning1\expnd0\expndtw0 {\listtext	1	}\expnd0\expndtw0\kerning0
 D\'e9-zippez le code dans un r\'e9pertoire var/www/hcc\
-\pard\tx220\tx720\pardeftab720\li720\fi-720\parhyphenfactor20\partightenfactor0
-\ls1\ilvl0\cf0 \kerning1\expnd0\expndtw0 {\listtext	2	}\expnd0\expndtw0\kerning0
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	2	}\expnd0\expndtw0\kerning0
 Faites un 
 \f1\fs24 \cf4 \cb5 sudo \cf6 chown\cf7  \cf8 -\cf6 R\cf7  \cf6 www\cf8 -\cf6 data\cf8 :\cf6 www\cf8 -\cf6 data\cf7  \cf8 /\cf4 var\cf8 /\cf6 www\cf8 /\cf6 hcc
 \f0\fs28 \cf0 \cb1  \cf2 sur tous le dossier hcc (changez /var/www/hcc si votre chemin est diff\'e9rent, important sinon rien ne fonctionnera)\cf0 \
@@ -40,4 +43,12 @@ sudo \cf6 chmod\cf7  \cf9 4777\cf7  \cf6 radioEmission
 \ls1\ilvl0\cf0 \kerning1\expnd0\expndtw0 {\listtext	7	}\expnd0\expndtw0\kerning0
 sur l\'92ex\'e9cutable nomm\'e9 radioEmission (important sinon l\'92interface web ne fonctionnera pas)\
 \ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	8	}\expnd0\expndtw0\kerning0
-Le script est install\'e9 !!}
+Le script est install\'e9 !!\
+\pard\tx566\pardeftab720\parhyphenfactor20\partightenfactor0
+\cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\fs22 \cf10 \cb11 \kerning1\expnd0\expndtw0 \CocoaLigature0 sudo /var/www/yana-server/plugins/relay/radioEmission 0 8217034 1 on
+\f0\fs28 \cf0 \cb1 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+}

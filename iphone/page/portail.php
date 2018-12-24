@@ -46,11 +46,13 @@
     <link rel='stylesheet' href='../css/annexe/animate.css' />
 
     <link href="../css/main/portail.css" rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="180x180" href="../img/portail_icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="http://zupimages.net/up/16/51/31l6.png">
+    <!--<link rel="apple-touch-icon" sizes="180x180" href="../img/portail_icon.png">-->
+
 
     <script src="../js/annexe/jquery-2.1.0.min.js"></script>
     <script src="../js/annexe/bootstrap.js"></script>
-    <script type="text/javascript" src="../js/main/portail.js"></script>
+    <!--<script type="text/javascript" src="../js/main/portail.js"></script>-->
 
     <title>Portail - Alfred Server</title>
 </head>
@@ -67,7 +69,7 @@
                         <nav class="navbar row">
                             <div class="navbar-header">
                                 <div class="navbar-pro">
-                                    <img src="../img/users/<?php echo $_SESSION['username'];?>.jpg" class="img-responsive img-circle nav-link" width="30" height="30" />
+                                    <img src="../img/users/<?php echo $_SESSION['username'];?>.png" class="img-responsive img-circle nav-link" width="30" height="30" />
                                 </div>
                                 <div class="navbar-img">
                                     <img src="../img/portail.png" class="title_img" width="40" height="40" />
@@ -81,15 +83,24 @@
                             </div>
                             <div class="collapse navbar-collapse navbar-1">
                                 <ul class="site-navigation nav navbar-nav">
+                                    <?php //if ($_SESSION['ad'] == 1) { 
+                                    if ($_SESSION['username'] == "skulblaka24") { ?>
                                     <li>
                                         <a href="dashboard.php" class="nav-link">Dashboard</a>
                                     </li>
+                                    <?php }?>
+                                    <?php //if ($_SESSION['ac'] == 1) { 
+                                    if ($_SESSION['username'] == "skulblaka24") { ?>
                                     <li>
                                         <a href="control_center.php" class="nav-link">Control Center</a>
                                     </li>
+                                    <?php }?>
+                                    <?php //if ($_SESSION['ap'] == 1) { 
+                                    if ($_SESSION['username'] != "") { ?>
                                     <li>
                                         <a href="portail.php" class="nav-link">Portail</a>
                                     </li>
+                                    <?php }?>
                                     <li>
                                         <a href="../logout.php" class="nav-link">Logout</a>
                                     </li>

@@ -39,9 +39,9 @@
 	 
 	
 	// Fonctionnement des commandes pour tous les relais (arg = yes or else)
-	$activated = "no";
+	$activated = "yes";
 	// Fonctionnement mode debug oral /!\ only MACOSX (arg = yes or else)
-	$debug = "yes";
+	$debug = "no";
 	
 	if (isset($_POST['relai'])) {
 		if ($debug == "yes") {$test=shell_exec('say "laille di du relai à été transmis, c est le' .$_POST['relai'].'"');} /* Debug */

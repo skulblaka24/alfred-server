@@ -1,7 +1,7 @@
 <?php 
 	//Démarrage de la session
 	session_start();
-	include ("./action/login.php");
+	include ("./login.php");
 	
 	//Encodage de la page
 	date_default_timezone_set("Europe/Paris");
