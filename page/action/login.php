@@ -35,7 +35,7 @@ if(empty($_SESSION['username']))
 			}
 
 		} else if ($pseudoCookie == "visiteur") {
-			header('location:../../logout.php');
+			header('location: ../../logout.php');
 		}
 	}
 ?>

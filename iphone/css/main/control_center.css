@@ -184,7 +184,7 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 .navbar-img{
   position: absolute;
   z-index: 1;
-  margin-left: 48.5%;
+  margin-left: 35%;
   padding-top: 10px;
   
 }
@@ -509,9 +509,9 @@ button{
      -webkit-transform:none;
      -ms-transform:none;
     }
-    .navbar-img{
+    /*.navbar-img{
             margin-left: 45%;
-    }
+    }*/
     .nav > li{
         /*margin-top: 0;*/
         border-bottom:1px solid rgba(0,0,0,.1);
@@ -599,13 +599,332 @@ button{
   .title {
       display: inline-block;
       margin-top: 0px;
-      margin-left: -15px;
+      margin-left: -8px;
   }
   .title_img {
-      margin-left: -40%;
+      margin-left: -21.5%;
       margin-top: -3px;
   }
+}
 /* END Titre dans le centre de la navbar */
+
+/* Iphone 6,6S,7 et plus */
+/* L'entête de l'app hybrid alfred est de 20px*/
+@media (max-width: 416px)
+{
+  html{
+    height:calc(100% - 0px);
+  }
+  body{
+    height: calc(100% + 2px);
+  }
+  .full-height {
+    height: 100%;
+  }
+  .full-wnav-height {
+    height: calc(100% - 50px);
+  }
+  .center {
+    margin:auto;
+    width:340px;
+    height:544px;
+  }
+  .container {
+    padding: 0px;
+  }
+  .modal-body {
+    margin: auto;
+    margin-top: 0px;
+    padding: 0px;
+    width: 340px;
+  }
+  .container-fluid {
+    margin: auto;
+    margin-top: 0px;
+    padding: 0px;
+    width: 340px;
+  }
+  .dbloc-title {
+    height: 100px;
+  }
+  .d-title {
+    margin-top: -15px;
+  }
+
+/* Menu de selection de type de relai */
+  .barre_menu {
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    margin-left: 7.5px;
+    width: 338px;
+    
+    
+  }
+  .button_menu {
+    display: inline-block;
+    margin-left: 1.5px;
+    height: 40px;
+    width: 60.4px;
+    border-radius: 5px;
+    border:1px solid white;
+
+    cursor: pointer;
+  }
+  .button_single_amp {
+    display: block;
+    margin-top: 0px;
+    margin-left: 13%;
+    height: 35px;
+    width: 40px;
+  }
+  .button_single_pri {
+    display: block;
+    margin-top: 0px;
+    margin-left: 13%;
+    height: 35px;
+    width: 40px;
+  }
+  .button_single_cmd {
+    display: block;
+    margin-top: 7px;
+    margin-left: 23%;
+    height: 26px;
+    width: 29px;
+  }
+  .button_single_room {
+    display: block;
+    margin-top: 3px;
+    margin-left: 25.5%;
+    height: 30px;
+    width: 30px;
+  }
+  .button_single_oth {
+    display: block;
+    margin-top: 5px;
+    margin-left: 20%;
+    height: 29px;
+    width: 33px;
+  }
+
+/* END Menu de selection de type de relai */
+
+/* Constitue l'ensemble des boutons des relais */
+  .rel_menu {         
+    margin: auto;
+    display: block;
+    color: white;
+    margin-top: 0px;
+    height: 490px;
+    max-height: 490px;
+    overflow: auto;
+    width: 340px;
+  }
+  .amp_menu {
+    display: none;
+  }
+  .pri_menu {
+    display: none; 
+  }
+  .cmd_menu {
+    display: none;  
+  }
+  .room_menu {
+    display: none;  
+  }
+  .oth_menu {
+    display: none;  
+  }
+
+  .btn_relai {               /* Chacun des boutons */
+
+    display: inline-block;
+
+    margin-top: 2px;
+    margin-left: 9px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+
+    height: 96px;
+    width: 157px;
+    cursor: pointer;
+    font-size: 25px;
+    color: white;
+
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: white;
+  }
+  .btn_title {
+    margin:auto;
+    margin-top: 15px;
+    font-size: 20px;
+    color: white;
+    width: 100px;
+    text-align: center;
+
+  }
+  .room_name{
+    margin-top: 0px;
+    margin-left: 0px;
+    font-size: 14px;
+    color: white;
+  }
+
+  .btn_img { 
+
+    display: block;
+    height: 20px;
+    width: 20px;
+    margin-top: -64px;
+    margin-left: -10px;
+    cursor: pointer;
+
+  }
+  .imgb, .imgi, .imgp {
+    position: absolute;
+    z-index: 1;
+  }
+
+  .imgi {
+    z-index: 2;
+    width: 33px;
+    height: 30px;
+  }
+  .imgp {
+    margin-left: 116px;
+    margin-top: -58px;
+    width: 15px;
+    height: 15px;
+  }
+
+  .room_choice {
+    display: none;
+    position: absolute;
+    background-image:url('../../img/bgi-white-iphone.png');
+    top: 0px;
+    height: 0%;
+    width: 0%;
+    z-index: 9;
+  }
+  .room_title {
+    display: block;
+    position: absolute;
+    
+    margin: auto;
+    margin-top: 10px;
+    margin-left: 50px;
+    width: 280px;
+    
+    text-align: center;
+    font-size: 23px;
+    color: black;
+  }
+  .room_btn_block {
+    display: block;
+    margin-top: 50px;
+    margin-left: 28px;
+    width: 318px;
+    
+  }
+  #btn_room {               /* Chacun des boutons */
+
+    display: inline-block;
+
+    margin-top: 2px;
+    margin-left: 2px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+
+    height: 95px;
+    width: 157px;
+    cursor: pointer;
+    font-size: 25px;
+    color: black;
+
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: black;
+    z-index: 10;
+  }
+  .btn_room_title {
+    display: block;
+    margin-top: 26px;
+    margin-left: 0px;
+    font-size: 20px;
+    color: black;
+    z-index: 10;
+
+  }
+/* END Constitue l'ensemble des boutons des relais */
+
+/* Signature de bas de page */
+  #sign_div {
+    margin-top: -6px;
+    width: 360px;
+  }
+  .sign_bar{
+    margin-left: 8px;
+  }
+  #sign_text {
+    text-align: center;
+    margin-left: -24px;
+  }
+  #sign_text_i {
+  }
+/* END Signature de bas de page */
+
+
+/* Trigered by JS */
+
+  .surligne {
+    border:2px solid white;
+  }
+  .show-none {
+    display: none;
+  }
+  .show {
+    display: block;
+  }
+  .show-inline {
+    display: inline-block;
+    position: relative;
+  }
+  .show_room_choice {
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 375px;
+    z-index: 9;
+  }
+  
+  /* ################################################## */
+
+  /* Trigger pour les apparitions ou les disparitions 
+
+  .hide_title .app_title {opacity: 0;}
+  .active .open_iframe {
+
+    display: block;
+    height: 40%;
+    width: 75%;
+    
+  }
+  .show_bg_iframe .app_fond {
+    display: block;
+    height: 180%;
+    width: 100%;
+    z-index: 9;
+  }
+
+  .show_button .app_button, .show_fond .imgb, .show_title_iframe .app_title_iframe, .active .app_arrow {display: block;}
+
+  /* ################################################## */
+}
+
+/* Iphone 5,5S */
+@media (max-width: 321px)
+{
   html{
 		height:calc(100% - 0px);
 	}
@@ -709,8 +1028,8 @@ button{
     display: block;
     color: white;
     margin-top: 0px;
-    height: 380px;
-    max-height: 380px;
+    height: 390px;
+    max-height: 390px;
     overflow: auto;
     width: 320px;
   }
@@ -817,7 +1136,7 @@ button{
   .room_btn_block {
     display: block;
     margin-top: 50px;
-    margin-left: 4px;
+    margin-left: 0px;
     width: 318px;
     
   }
@@ -854,7 +1173,7 @@ button{
 
 /* Signature de bas de page */
   #sign_div {
-		
+		margin-top: 10px;
 	}
 	.sign_bar{
 		margin-left: -2px;

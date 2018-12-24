@@ -45,16 +45,11 @@
     <link rel="stylesheet" type="text/css" href="../css/annexe/bootstrap.css">
     <link rel="stylesheet" id="ppstyle" type="text/css" href="../css/main/dashboard.css" />
     <link rel='stylesheet' href='../css/annexe/animate.css' />
-    <link rel='stylesheet' href='../css/annexe/jquery.gridster.css' />
-    <link rel='stylesheet' href='../css/annexe/jquery.gridster.min.css' />
+
     
     <script src="../js/annexe/jquery-2.1.0.min.js"></script>
     <script src="../js/annexe/bootstrap.js"></script>
    	<script type="text/javascript" src="../js/main/dashboard.js"></script>
-   	<script type="text/javascript" src="../js/gridster/jquery.gridster.js"></script>
-   	<script type="text/javascript" src="../js/gridster/jquery.gridster.min.js"></script>
-   	<script type="text/javascript" src="../js/gridster/jquery.gridster.with-extras.js"></script>
-   	<script type="text/javascript" src="../js/gridster/jquery.gridster.with-extras.min.js"></script>
     
     <title>Dashboard - Alfred Server</title>
 </head>
@@ -63,7 +58,7 @@
 <div class="page-container">
     
 	<!-- Navigation Bloc -->
-	<div class="page">
+	<div class="page bg-cirques">
 		<div id="b-nav" class="bloc-container bgc-grey">
 			<div id="bloc-nav" class="d-mode">
 				<div class="bloc d-bloc" id="nav-bloc">
@@ -138,69 +133,47 @@
 								<!-- Les modules s'insère ici -->
 								<div class="app_menu">
 								<!-- MENU -->
+								<?php
 
-									<div class="gridster ready ">
-							          <ul style="height: 460px; width: 910px; position: relative;">
-							          	<?php
+									// Lecture du fichier d'état du ping généré par ping daemon
+									$tableau = array();
+									$handle = @fopen("./.etat_servers.txt", "r" );
+									if ($handle)
+									{
+									   while (!feof($handle))
+									   {
+									     $buffer = fgets($handle, 4096);
+									     $tableau[] = $buffer;
+									   }
+									   fclose($handle);
+									}
 
-											// Lecture du fichier d'état du ping généré par ping daemon
-											$tableau = array();
-											$handle = @fopen("./.etat_servers.txt", "r" );
-											if ($handle)
-											{
-											   while (!feof($handle))
-											   {
-											     $buffer = fgets($handle, 4096);
-											     $tableau[] = $buffer;
-											   }
-											   fclose($handle);
-											}
+									$req = $pdo->query('SELECT * FROM `alf_dash`');
 
-											$req = $pdo->query('SELECT * FROM `alf_dash`');
-
-											while ($data = $req->fetch()) {
-												$state = $tableau[$data['dash_id']-1];
-												if ($state == 1) { $state = 1; } else { $state = 0;}
-										?>
-
-
-							            <li data-row="1" data-col="1" data-sizex="1" data-sizey="1" class="gs-w" style="position: absolute; background-color: grey; list-style-type: none;"><span class="gs-resize-handle gs-resize-handle-both">
-							            	
-							            	<?php 
-								            	echo '<div class="app" data-id="' . $data['dash_id'] . '" data-url="' . $data['dash_site'] . '" data-load="0">';
-													echo '<div class="app_icon" data-state="' . $state . '">';
-														echo  '<img class="app_img imgi" src="../img/' . $data['dash_type'] . '.png" />';
-														echo  '<img class="app_img imgp" src="../img/Point' . (($state) ? 'Vert' : 'Rouge') . '.png" />';
-													echo  '</div>';
-													echo  '<div class="app_title">';
-														echo  '<span class="app_title">' . $data['dash_name'] . '</span>';
-													echo  '</div>';
-												echo  '</div>'; 
-											?>
-
-							            </span></li>
-							            
-							            <?php } ?>
-							          </ul>
-							        </div>
-
-
-
-
-
-								
+									while ($data = $req->fetch()) {
 									
-										<?php
+										/*$ping = exec('ping -c 1 -t 1 ' . $data['dash_machine'], $output, $return);
+										echo $data['dash_id']." ".$return."/"; ### DEBUG ###
+										$state = !$return;*/
 
-										
+										$state = $tableau[$data['dash_id']-1];
+										if ($state == 1) { $state = 1; } else { $state = 0;}
 									
-										
-									
+										echo '<div class="app" data-id="' . $data['dash_id'] . '" data-url="' . $data['dash_site'] . '" data-load="0">';
+											echo '<div class="app_icon" data-state="' . $state . '">';
+												echo  '<img class="app_img imgi" src="../img/' . $data['dash_type'] . '.png" />';
+												echo  '<img class="app_img imgp" src="../img/Point' . (($state) ? 'Vert' : 'Rouge') . '.png" />';
+											echo  '</div>';
+											echo  '<div class="app_title">';
+												echo  '<span class="app_title">' . $data['dash_name'] . '</span>';
+											echo  '</div>';
+											
+										echo  '</div>';
+									}
 								?>
 								</div>
 							</div>
 						</div>
-						
 						<!-- FIN BODY -->
 					</div>
 				</div>

@@ -1,7 +1,7 @@
 <?php 
 	// Démarrage de la session
 	session_start();
-	include ("./action/login.php");
+	include ("./login.php");
 
 	// Encodage de la page
 	date_default_timezone_set("Europe/Paris");
@@ -26,9 +26,11 @@
 	// Comptage de la base
 	$reqc = $pdo->query('SELECT * FROM `alf_users`');
 	$count = $reqc->rowCount();
-	
+	//$test=shell_exec('say "Le user, c est'.$_POST['user'].' et le bouton c est le prout' .$_POST['button'].' "'); /* Debug */
+
 	if((!empty($_POST['user'])) && ($_POST['button']) == 'Ajouter')
 	{
+		//$test=shell_exec('say "laille di du relai à été transmis, c est le' .$_POST['relai'].'"'); /* Debug */
 		$addName = $_POST['user'];
 		$addPass = sha1($_POST['pass']);
 		$addStat = $_POST['status'];

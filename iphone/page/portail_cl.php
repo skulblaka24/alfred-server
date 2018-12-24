@@ -80,15 +80,24 @@
                             </div>
                             <div class="collapse navbar-collapse navbar-1">
                                 <ul class="site-navigation nav navbar-nav">
+                                    <?php //if ($_SESSION['ad'] == 1) { 
+                                    if ($_SESSION['username'] == "skulblaka24") { ?>
                                     <li>
                                         <a href="dashboard.php" class="nav-link">Dashboard</a>
                                     </li>
+                                    <?php }?>
+                                    <?php //if ($_SESSION['ac'] == 1) { 
+                                    if ($_SESSION['username'] == "skulblaka24") { ?>
                                     <li>
                                         <a href="control_center.php" class="nav-link">Control Center</a>
                                     </li>
+                                    <?php }?>
+                                    <?php //if ($_SESSION['ap'] == 1) { 
+                                    if ($_SESSION['username'] != "") { ?>
                                     <li>
                                         <a href="portail.php" class="nav-link">Portail</a>
                                     </li>
+                                    <?php }?>
                                     <li>
                                         <a href="../logout.php" class="nav-link">Logout</a>
                                     </li>

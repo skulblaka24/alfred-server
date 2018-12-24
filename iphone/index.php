@@ -42,7 +42,7 @@
 			$_SESSION['username'] = $username;
 			// Attention pas d'espace avant <?php sinon le header ne fonctionne pas /!\
 			setCookie('username',$username,(time()+60*60*24*365)); // 1 an
- 			setCookie('motdepassecrypte',hash(sha1($password)),(time()+60*60*24*365));
+ 			setCookie('motdepassecrypte',hash(sha1, $password),(time()+60*60*24*365));
 			header("Location: ./page/welcome.php");
 		}
 		elseif($login == true)

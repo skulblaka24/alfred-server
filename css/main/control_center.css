@@ -430,8 +430,9 @@ button{
     
     margin-top: 0px;
     margin-bottom: 10px;
+    margin-left: 1px;
     
-    width: 252px;
+    width: 250px;
   }
   
   /* Ampoule Menu */
@@ -439,7 +440,7 @@ button{
   .amp_menu_title {
     margin-top: 0px;
     height: 40px;
-    width: 252px;
+    width: 250px;
     border-radius: 5px;
     border:1px solid white;
   }
@@ -464,7 +465,7 @@ button{
     margin-bottom: 0px;
     margin-right: 0px;
     
-    width: 252px;
+    width: 250px;
     height: 60px;
     
     cursor: pointer;
@@ -480,7 +481,7 @@ button{
   .pri_menu_title {
     margin-top: 0px;
     height: 40px;
-    width: 252px;
+    width: 250px;
     border-radius: 5px;
     border:1px solid white;
   }
@@ -504,7 +505,7 @@ button{
     margin-bottom: 0px;
     margin-right: 0px;
     
-    width: 252px;
+    width: 250px;
     height: 60px;
     
     cursor: pointer;
@@ -520,7 +521,7 @@ button{
   .room_menu_title {
     margin-top: 0px;
     height: 40px;
-    width: 252px;
+    width: 250px;
     border-radius: 5px;
     border:1px solid white;
     
@@ -543,7 +544,7 @@ button{
   .cmd_menu_title {
     margin-top: 0px;
     height: 40px;
-    width: 252px;
+    width: 250px;
     border-radius: 5px;
     border:1px solid white;
   }
@@ -568,7 +569,7 @@ button{
     margin-bottom: 0px;
     margin-right: 0px;
     
-    width: 252px;
+    width: 250px;
     height: 60px;
     
     cursor: pointer;
@@ -584,7 +585,7 @@ button{
   .oth_menu_title {
     margin-top: 0px;
     height: 40px;
-    width: 252px;
+    width: 250px;
     border-radius: 5px;
     border:1px solid white;
   }
@@ -610,7 +611,7 @@ button{
     margin-bottom: 0px;
     margin-right: 0px;
     
-    width: 252px;
+    width: 250px;
     height: 60px;
     
     cursor: pointer;

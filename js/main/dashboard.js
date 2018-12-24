@@ -41,6 +41,15 @@ $(document).ready(function () {
 		_app.removeClass('show_button');
 	});
 
+	$(function(){ //DOM Ready
+
+    $(".gridster ul").gridster({
+	        widget_margins: [10, 10],
+	        widget_base_dimensions: [140, 140]
+	    });
+
+	});
+
 
 	// Fonction quant on clique sur l'icone
 	$('.app').on('click', function () {
